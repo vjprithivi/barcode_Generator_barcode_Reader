@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fra"
+
+    android:gravity="center"
+    android:background="@drawable/one"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context="com.techsofficial.prithivi.barcodereader.barcode_genrator"
+    tools:showIn="@layout/barcode_gerator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_width="fill_parent">
+        <!--    <EditText android:text="@+id/EditText01"
+                android:id="@+id/EditText01"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_width="fill_parent">
+            </EditText>-->
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:hint="Enter The Pin "
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            app:backgroundTint="#f44336"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/barcode" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/cardview"
+        app:cardCornerRadius="20dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" >
+        <!--     android:visibility="invisible"-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/barcodename"
+
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+    <!--
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />-->
+
+</LinearLayout>
+
